@@ -1,321 +1,321 @@
 /**
  * Vinyl Universe - Album Data
- * Collection of classic albums with track information
+ * Collection of modern albums with track information
  */
 
 const albums = [
   {
     id: 1,
-    title: "Dark Side of the Moon",
-    artist: "Pink Floyd",
-    year: 1973,
-    coverUrl: "https://upload.wikimedia.org/wikipedia/en/3/3b/Dark_Side_of_the_Moon.png",
+    title: "WE DON'T TRUST YOU",
+    artist: "Future / Metro Boomin",
+    year: 2024,
+    coverUrl: "https://upload.wikimedia.org/wikipedia/en/8/8d/Future_and_Metro_Boomin_-_We_Don%27t_Trust_You.png",
     tracks: [
       {
-        title: "Speak to Me / Breathe",
-        youtubeId: "k_JnCWT-uTY"
+        title: "Like That (feat. Kendrick Lamar)",
+        youtubeId: "GOtv0YPdV_8"
       },
       {
-        title: "Time",
-        youtubeId: "F_VjVqe3KJ0"
+        title: "Type Shit (feat. Travis Scott & Playboi Carti)",
+        youtubeId: "I0fgkcTbBoI"
       },
       {
-        title: "Money",
-        youtubeId: "-0kcet4aPpQ"
+        title: "Young Metro (feat. The Weeknd)",
+        youtubeId: "mq4wClhFmA8"
       }
     ]
   },
   {
     id: 2,
-    title: "Rumours",
-    artist: "Fleetwood Mac",
-    year: 1977,
-    coverUrl: "https://upload.wikimedia.org/wikipedia/en/f/fb/FMacRumours.PNG",
+    title: "UTOPIA",
+    artist: "Travis Scott",
+    year: 2023,
+    coverUrl: "https://upload.wikimedia.org/wikipedia/en/1/14/Travis_Scott_-_Utopia.png",
     tracks: [
       {
-        title: "Go Your Own Way",
-        youtubeId: "6ul-cZyuYq4"
+        title: "FE!N (feat. Playboi Carti)",
+        youtubeId: "B9synWjqBn8"
       },
       {
-        title: "Dreams",
-        youtubeId: "mrZRURcb1cM"
+        title: "K-POP (feat. Bad Bunny & The Weeknd)",
+        youtubeId: "_kS7F4VpJa0"
       },
       {
-        title: "The Chain",
-        youtubeId: "kBYHwH1Vb-c"
+        title: "TOPIA TWINS (feat. Rob49 & 21 Savage)",
+        youtubeId: "6PWTrMsXEN8"
       }
     ]
   },
   {
     id: 3,
-    title: "Thriller",
-    artist: "Michael Jackson",
-    year: 1982,
-    coverUrl: "https://upload.wikimedia.org/wikipedia/en/5/55/Michael_Jackson_-_Thriller.png",
+    title: "Beautiful And Brutal Yard",
+    artist: "J Hus",
+    year: 2023,
+    coverUrl: "https://upload.wikimedia.org/wikipedia/en/9/97/J_Hus_-_Beautiful_and_Brutal_Yard.png",
     tracks: [
       {
-        title: "Billie Jean",
-        youtubeId: "Zi_XLOBDo_Y"
+        title: "Who Told You (feat. Drake)",
+        youtubeId: "JxCLY0QXmWM"
       },
       {
-        title: "Beat It",
-        youtubeId: "oRdxUFDoQe0"
+        title: "Militerian (feat. Naira Marley)",
+        youtubeId: "4_ZpB-BIV74"
       },
       {
-        title: "Thriller",
-        youtubeId: "sOnqjkJTMaA"
+        title: "Masculine (feat. Burna Boy)",
+        youtubeId: "dJJ-ZKEZjrE"
       }
     ]
   },
   {
     id: 4,
-    title: "Purple Rain",
-    artist: "Prince",
-    year: 1984,
-    coverUrl: "https://upload.wikimedia.org/wikipedia/en/9/9c/Princepurplerain.jpg",
+    title: "Born in the Wild",
+    artist: "Tems",
+    year: 2024,
+    coverUrl: "https://upload.wikimedia.org/wikipedia/en/6/6a/Tems_-_Born_in_the_Wild.png",
     tracks: [
       {
-        title: "Purple Rain",
-        youtubeId: "TvnYmWpD_T8"
+        title: "Love Me JeJe",
+        youtubeId: "CJSyVr4f8yk"
       },
       {
-        title: "When Doves Cry",
-        youtubeId: "UG3VcCAlUgE"
+        title: "Burning",
+        youtubeId: "ahrIplmQKKY"
       },
       {
-        title: "Let's Go Crazy",
-        youtubeId: "aXJhDltzYVQ"
+        title: "Get It Right (feat. Asake)",
+        youtubeId: "V25bRDKPVN0"
       }
     ]
   },
   {
     id: 5,
-    title: "Abbey Road",
-    artist: "The Beatles",
-    year: 1969,
-    coverUrl: "https://upload.wikimedia.org/wikipedia/en/4/42/Beatles_-_Abbey_Road.jpg",
+    title: "Larger Than Life",
+    artist: "Brent Faiyaz",
+    year: 2023,
+    coverUrl: "https://upload.wikimedia.org/wikipedia/en/8/8f/Brent_Faiyaz_-_Larger_Than_Life.png",
     tracks: [
       {
-        title: "Come Together",
-        youtubeId: "45cYwDMibGo"
+        title: "Moment of Your Life (feat. Coco Jones)",
+        youtubeId: "aDjvNqKfUaY"
       },
       {
-        title: "Something",
-        youtubeId: "UelDrZ1aFeY"
+        title: "WY@",
+        youtubeId: "Qi2nVo1qTQs"
       },
       {
-        title: "Here Comes The Sun",
-        youtubeId: "KQetemT1sWc"
+        title: "Upset (feat. Tommy Richman)",
+        youtubeId: "vJBrZnMpPwM"
       }
     ]
   },
   {
     id: 6,
-    title: "Nevermind",
-    artist: "Nirvana",
-    year: 1991,
-    coverUrl: "https://upload.wikimedia.org/wikipedia/en/b/b7/NirvanaNevermindalbumcover.jpg",
+    title: "Boy Alone",
+    artist: "Omah Lay",
+    year: 2022,
+    coverUrl: "https://upload.wikimedia.org/wikipedia/en/9/9d/Omah_Lay_-_Boy_Alone.png",
     tracks: [
       {
-        title: "Smells Like Teen Spirit",
-        youtubeId: "hTWKbfoikeg"
+        title: "i'm a mess",
+        youtubeId: "UR28V9Q-aRc"
       },
       {
-        title: "Come As You Are",
-        youtubeId: "vabnZ9-ex7o"
+        title: "soso",
+        youtubeId: "QCGq3tD9xBc"
       },
       {
-        title: "Lithium",
-        youtubeId: "pkcJEvMcnEg"
+        title: "attention",
+        youtubeId: "g4YtCuaOQsA"
       }
     ]
   },
   {
     id: 7,
-    title: "The Chronic",
-    artist: "Dr. Dre",
-    year: 1992,
-    coverUrl: "https://upload.wikimedia.org/wikipedia/en/1/19/Dr.DreTheChronic.jpg",
+    title: "a Gift & a Curse",
+    artist: "Gunna",
+    year: 2023,
+    coverUrl: "https://upload.wikimedia.org/wikipedia/en/f/ff/Gunna_-_a_Gift_%26_a_Curse.png",
     tracks: [
       {
-        title: "Nuthin' but a 'G' Thang",
-        youtubeId: "6xjRdBjmePQ"
+        title: "fukumean",
+        youtubeId: "j3enwhRUoiI"
       },
       {
-        title: "Let Me Ride",
-        youtubeId: "S0Sp500ZVI0"
+        title: "back at it",
+        youtubeId: "xvQ4XYZGGgc"
       },
       {
-        title: "Dre Day",
-        youtubeId: "h4UqMyldS7Q"
+        title: "rodeo dr",
+        youtubeId: "CjxHylvfTJw"
       }
     ]
   },
   {
     id: 8,
-    title: "Back to Black",
-    artist: "Amy Winehouse",
-    year: 2006,
-    coverUrl: "https://upload.wikimedia.org/wikipedia/en/6/67/Amy_Winehouse_-_Back_to_Black_%28album%29.png",
+    title: "Whole Lotta Red",
+    artist: "Playboi Carti",
+    year: 2020,
+    coverUrl: "https://upload.wikimedia.org/wikipedia/en/2/24/Playboi_Carti_-_Whole_Lotta_Red.png",
     tracks: [
       {
-        title: "Rehab",
-        youtubeId: "KUmZp8pR1uc"
+        title: "Rockstar Made",
+        youtubeId: "HJeuWGK_IiA"
       },
       {
-        title: "Back to Black",
-        youtubeId: "TJAfLE39ZZ8"
+        title: "Sky",
+        youtubeId: "KnumAWWWgUE"
       },
       {
-        title: "You Know I'm No Good",
-        youtubeId: "b-I2s5zRbHg"
+        title: "New Tank",
+        youtubeId: "0tgYr03o3dE"
       }
     ]
   },
   {
     id: 9,
-    title: "Random Access Memories",
-    artist: "Daft Punk",
-    year: 2013,
-    coverUrl: "https://upload.wikimedia.org/wikipedia/en/a/a7/Random_Access_Memories.jpg",
+    title: "SET IT OFF",
+    artist: "Offset",
+    year: 2023,
+    coverUrl: "https://upload.wikimedia.org/wikipedia/en/f/f5/Offset_-_Set_It_Off_%28album%29.png",
     tracks: [
       {
-        title: "Get Lucky",
-        youtubeId: "5NV6Rdv1a3I"
+        title: "SAY MY GRACE (feat. Travis Scott)",
+        youtubeId: "KQNvjJ-iiZs"
       },
       {
-        title: "Instant Crush",
-        youtubeId: "a5uQMwRMHcs"
+        title: "WORTH IT (feat. Don Toliver)",
+        youtubeId: "9XQxzlnPd9M"
       },
       {
-        title: "Lose Yourself to Dance",
-        youtubeId: "NF-kLy44Hls"
+        title: "ON THE RIVER (feat. Travis Scott)",
+        youtubeId: "dK8UmEPGsNw"
       }
     ]
   },
   {
     id: 10,
-    title: "Kind of Blue",
-    artist: "Miles Davis",
-    year: 1959,
-    coverUrl: "https://upload.wikimedia.org/wikipedia/en/9/9c/MilesDavisKindofBlue.jpg",
+    title: "For All The Dogs",
+    artist: "Drake",
+    year: 2023,
+    coverUrl: "https://upload.wikimedia.org/wikipedia/en/8/86/Drake_-_For_All_the_Dogs.png",
     tracks: [
       {
-        title: "So What",
-        youtubeId: "ylXk1LBvIqU"
+        title: "First Person Shooter (feat. J. Cole)",
+        youtubeId: "IWXSusMJu1k"
       },
       {
-        title: "Blue in Green",
-        youtubeId: "TLDflhhdPCg"
+        title: "Rich Baby Daddy (feat. Sexyy Red & SZA)",
+        youtubeId: "lCZm3XORE3Y"
       },
       {
-        title: "All Blues",
-        youtubeId: "-488UORrfJ0"
+        title: "IDGAF (feat. Yeat)",
+        youtubeId: "MQ7q1lRYOmo"
       }
     ]
   },
   {
     id: 11,
-    title: "OK Computer",
-    artist: "Radiohead",
-    year: 1997,
-    coverUrl: "https://upload.wikimedia.org/wikipedia/en/b/ba/Radioheadokcomputer.png",
+    title: "drowning (remixes)",
+    artist: "Vague003",
+    year: 2022,
+    coverUrl: "https://i.scdn.co/image/ab67616d0000b273d25b3a93eaabd16d1e599260",
     tracks: [
       {
-        title: "Paranoid Android",
-        youtubeId: "fHiGbolFFGw"
+        title: "drowning (reimagined)",
+        youtubeId: "Mq2Sz-CyFGg"
       },
       {
-        title: "Karma Police",
-        youtubeId: "1uYWYWPc9HU"
+        title: "drowning (original)",
+        youtubeId: "bBKo11Rf7BM"
       },
       {
-        title: "No Surprises",
-        youtubeId: "u5CVsCnxyXg"
+        title: "drowning (slowed + reverb)",
+        youtubeId: "YTbY8w3lf7o"
       }
     ]
   },
   {
     id: 12,
-    title: "To Pimp a Butterfly",
-    artist: "Kendrick Lamar",
-    year: 2015,
-    coverUrl: "https://upload.wikimedia.org/wikipedia/en/f/f6/Kendrick_Lamar_-_To_Pimp_a_Butterfly.png",
+    title: "Premier Gaou (Nitefreak Remix)",
+    artist: "Francis Mercier / Magic System / Nitefreak",
+    year: 2021,
+    coverUrl: "https://i.scdn.co/image/ab67616d0000b27307aa5ed6ad71d1ffb6c2df79",
     tracks: [
       {
-        title: "Alright",
-        youtubeId: "Z-48u_uWMHY"
+        title: "Premier Gaou (Nitefreak Remix)",
+        youtubeId: "N0HuUY8zOtM"
       },
       {
-        title: "King Kunta",
-        youtubeId: "hRK7PVJFbS8"
+        title: "Premier Gaou (Original Mix)",
+        youtubeId: "Q65QCp7V7CA"
       },
       {
-        title: "Wesley's Theory",
-        youtubeId: "s0QtSPl8cf0"
+        title: "Premier Gaou (Extended Mix)",
+        youtubeId: "WlkHvHZvOOw"
       }
     ]
   },
   {
     id: 13,
-    title: "Led Zeppelin IV",
-    artist: "Led Zeppelin",
-    year: 1971,
-    coverUrl: "https://upload.wikimedia.org/wikipedia/en/2/26/Led_Zeppelin_-_Led_Zeppelin_IV.jpg",
+    title: "Surrender",
+    artist: "RÜFÜS DU SOL",
+    year: 2021,
+    coverUrl: "https://upload.wikimedia.org/wikipedia/en/5/5b/R%C3%BCf%C3%BCs_Du_Sol_-_Surrender.png",
     tracks: [
       {
-        title: "Stairway to Heaven",
-        youtubeId: "QkF3oxziUI4"
+        title: "Next To Me",
+        youtubeId: "GCWXs_1zcE0"
       },
       {
-        title: "Black Dog",
-        youtubeId: "yBuub4Xe1mw"
+        title: "On My Knees",
+        youtubeId: "5CFCs18NyfA"
       },
       {
-        title: "Rock and Roll",
-        youtubeId: "lncr2g9XJHU"
+        title: "I Don't Wanna Leave",
+        youtubeId: "33Sd1iQ_pcQ"
       }
     ]
   },
   {
     id: 14,
-    title: "Blue",
-    artist: "Joni Mitchell",
-    year: 1971,
-    coverUrl: "https://upload.wikimedia.org/wikipedia/en/e/e1/Bluealbumcover.jpg",
+    title: "Coffee (Don't Read Signs)",
+    artist: "Odeal",
+    year: 2022,
+    coverUrl: "https://i.scdn.co/image/ab67616d0000b2731d90fe69be65d4c8ca27db1c",
     tracks: [
       {
-        title: "River",
-        youtubeId: "3NH-ctddY9o"
+        title: "Coffee (Don't Read Signs)",
+        youtubeId: "6J0AiSh2qng"
       },
       {
-        title: "A Case of You",
-        youtubeId: "0YuaZcylk_o"
+        title: "More Life",
+        youtubeId: "YrG_BPnXAfA"
       },
       {
-        title: "California",
-        youtubeId: "Lm39YkGrHDg"
+        title: "Be Easy",
+        youtubeId: "YPNnDi9m4_c"
       }
     ]
   },
   {
     id: 15,
-    title: "What's Going On",
-    artist: "Marvin Gaye",
-    year: 1971,
-    coverUrl: "https://upload.wikimedia.org/wikipedia/en/0/0f/Marvin-gaye-whats-going-on.jpg",
+    title: "Agora",
+    artist: "Caiiro",
+    year: 2020,
+    coverUrl: "https://i.scdn.co/image/ab67616d0000b273f50b23de5faa309b4f038313",
     tracks: [
       {
-        title: "What's Going On",
-        youtubeId: "o5TmORitlKk"
+        title: "Caiiro & Black Motion - Amagroove",
+        youtubeId: "2g1WX9-kKo8"
       },
       {
-        title: "Mercy Mercy Me (The Ecology)",
-        youtubeId: "G5xpBCCJ3MM"
+        title: "Caiiro - Agora",
+        youtubeId: "G6KNB9c0qdQ"
       },
       {
-        title: "Inner City Blues (Make Me Wanna Holler)",
-        youtubeId: "57Ykv1D0qEE"
+        title: "Caiiro & Jackie Queens - Found You",
+        youtubeId: "afUUt1dGOGg"
       }
     ]
   }
