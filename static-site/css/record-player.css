@@ -1,0 +1,441 @@
+/* Record Player Styles */
+
+.record-player {
+  position: relative;
+  width: 500px;
+  height: 300px;
+  background: linear-gradient(135deg, #222222 0%, #333333 100%);
+  border-radius: 10px;
+  box-shadow: 
+    0 20px 50px rgba(0, 0, 0, 0.5),
+    0 0 0 1px rgba(255, 255, 255, 0.1) inset;
+  overflow: hidden;
+  z-index: 10;
+  transform: perspective(1000px) rotateX(10deg);
+}
+
+.record-player::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+  z-index: 2;
+}
+
+.player-base {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Platter */
+.player-platter {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background-color: #111;
+  box-shadow: 
+    0 10px 30px rgba(0, 0, 0, 0.8),
+    0 0 0 1px rgba(255, 255, 255, 0.05) inset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transform: translateX(-20px);
+}
+
+.player-platter::before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 50%;
+  background: 
+    radial-gradient(
+      circle at center,
+      transparent 0,
+      transparent 35px,
+      rgba(0, 0, 0, 0.2) 35px,
+      rgba(0, 0, 0, 0.2) 38px,
+      transparent 38px,
+      transparent 65px,
+      rgba(0, 0, 0, 0.2) 65px,
+      rgba(0, 0, 0, 0.2) 68px,
+      transparent 68px,
+      transparent 95px,
+      rgba(0, 0, 0, 0.2) 95px,
+      rgba(0, 0, 0, 0.2) 98px
+    );
+  z-index: 5;
+}
+
+.player-spindle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #888 0%, #444 100%);
+  z-index: 10;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Record */
+.record {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #111;
+  overflow: hidden;
+  transform-origin: center center;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.record.spinning {
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.record-grooves {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: 
+    repeating-radial-gradient(
+      circle at center,
+      #111 0px,
+      #333 1px,
+      #111 2px,
+      #111 3px
+    );
+  opacity: 0.5;
+}
+
+.record-label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 6;
+}
+
+/* Tonearm */
+.player-tonearm {
+  position: absolute;
+  top: 100px;
+  right: 85px;
+  width: 140px;
+  height: 140px;
+  transform-origin: bottom right;
+  transform: rotate(-30deg);
+  transition: transform 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 20;
+}
+
+.player-tonearm.playing {
+  transform: rotate(15deg);
+}
+
+.tonearm-base {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #888 0%, #444 100%);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.tonearm-arm {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 120px;
+  height: 8px;
+  background: linear-gradient(to right, #777 0%, #555 100%);
+  border-radius: 4px;
+  transform-origin: bottom right;
+  transform: rotate(-15deg);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.tonearm-headshell {
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+  width: 20px;
+  height: 15px;
+  border-radius: 2px;
+  background-color: #333;
+  transform: rotate(10deg);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.tonearm-headshell::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 10px;
+  width: 2px;
+  height: 5px;
+  background-color: var(--accent);
+  border-radius: 1px;
+}
+
+/* Player Controls */
+.player-controls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 20px;
+  z-index: 30;
+}
+
+.control-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.3);
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+}
+
+.control-button:hover {
+  background: var(--accent);
+  color: black;
+}
+
+.control-button:active {
+  transform: scale(0.95);
+}
+
+.power-button {
+  background: var(--accent-dark);
+  color: white;
+}
+
+.power-button.on {
+  background: var(--accent);
+  box-shadow: 0 0 10px var(--accent);
+}
+
+.volume-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 20px;
+}
+
+.volume-control i {
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+}
+
+.volume-slider {
+  -webkit-appearance: none;
+  width: 80px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 2px;
+  outline: none;
+}
+
+.volume-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--accent);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.volume-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+
+/* Record Flying Animation */
+@keyframes recordFly {
+  0% {
+    transform: translate(0, 0) scale(1) rotate(0deg);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  70% {
+    transform: translate(-150px, -100px) scale(0.8) rotate(720deg);
+  }
+  90% {
+    transform: translate(-110px, -60px) scale(0.8) rotate(1080deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-100px, -50px) scale(1) rotate(1440deg);
+    opacity: 0;
+  }
+}
+
+.flying-record {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #111;
+  z-index: 40;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+  animation: recordFly 3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.flying-record-grooves {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: 
+    repeating-radial-gradient(
+      circle at center,
+      #111 0px,
+      #333 1px,
+      #111 2px,
+      #111 3px
+    );
+  opacity: 0.5;
+}
+
+.flying-record-label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .record-player {
+    width: 400px;
+    height: 240px;
+  }
+  
+  .player-platter {
+    width: 180px;
+    height: 180px;
+    transform: translateX(-15px);
+  }
+  
+  .record {
+    width: 160px;
+    height: 160px;
+  }
+  
+  .record-label {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .player-tonearm {
+    top: 75px;
+    right: 75px;
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .record-player {
+    width: 320px;
+    height: 200px;
+  }
+  
+  .player-platter {
+    width: 150px;
+    height: 150px;
+    transform: translateX(-10px);
+  }
+  
+  .record {
+    width: 130px;
+    height: 130px;
+  }
+  
+  .record-label {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .player-tonearm {
+    top: 60px;
+    right: 60px;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .tonearm-arm {
+    width: 90px;
+    height: 6px;
+  }
+  
+  .player-controls {
+    height: 50px;
+    gap: 10px;
+  }
+  
+  .control-button {
+    width: 30px;
+    height: 30px;
+    font-size: 0.8rem;
+  }
+  
+  .volume-slider {
+    width: 60px;
+  }
+}

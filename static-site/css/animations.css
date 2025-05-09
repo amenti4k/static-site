@@ -1,0 +1,228 @@
+/* Animations for the dark mode Tetra website */
+
+/* Fade in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Slide up animation */
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Slide in from left */
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Slide in from right */
+@keyframes slideInRight {
+  from {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Scale up animation */
+@keyframes scaleUp {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Glow effect */
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px rgba(187, 134, 252, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(187, 134, 252, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(187, 134, 252, 0.5);
+  }
+}
+
+/* Text reveal */
+@keyframes textReveal {
+  0% {
+    max-width: 0;
+    opacity: 0;
+  }
+  100% {
+    max-width: 100%;
+    opacity: 1;
+  }
+}
+
+/* Applying animations to elements */
+
+.logo {
+  animation: fadeIn 1s ease forwards;
+}
+
+.nav-menu {
+  animation: fadeIn 1s ease 0.3s forwards;
+}
+
+.hero-content h1 {
+  animation: slideUp 1.2s ease forwards;
+}
+
+.hero-content p {
+  animation: fadeIn 1.2s ease 0.5s forwards;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+/* Section animations */
+section {
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+section.active {
+  opacity: 1;
+}
+
+/* Gallery items */
+.gallery-item {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.gallery-item.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Gallery captions */
+.gallery-caption.active {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+/* Journal items */
+.journal-item {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.journal-item.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* About content */
+.about-text h2 {
+  animation: slideInLeft 1s ease forwards;
+}
+
+.about-text p {
+  opacity: 0;
+  animation: fadeIn 1s ease 0.3s forwards;
+  animation-fill-mode: forwards;
+}
+
+.about-image {
+  animation: slideInRight 1s ease forwards;
+}
+
+/* Contact form inputs */
+.contact-form input,
+.contact-form textarea {
+  transition: all 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  animation: glow 2s infinite;
+}
+
+/* Button hover effects */
+.btn {
+  transition: all 0.3s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.btn:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.5s ease;
+  z-index: -1;
+}
+
+.btn:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Social links hover effect */
+.social-link {
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  animation: glow 2s infinite;
+}
+
+/* Footer links animation */
+.footer-links li {
+  transition: transform 0.3s ease;
+}
+
+.footer-links li:hover {
+  transform: translateX(5px);
+}
+
+/* Page load animation */
+body {
+  animation: fadeIn 1s ease;
+}
+
+/* Special hover effects for gallery */
+.gallery-image {
+  filter: grayscale(70%) brightness(0.7);
+  transition: all 0.5s ease;
+}
+
+.gallery-item:hover .gallery-image {
+  filter: grayscale(0%) brightness(0.9);
+}
