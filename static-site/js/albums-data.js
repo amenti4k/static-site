@@ -12,16 +12,8 @@ const albums = [
     coverUrl: "https://upload.wikimedia.org/wikipedia/en/3/3b/Dark_Side_of_the_Moon.png",
     tracks: [
       {
-        title: "Speak to Me / Breathe",
-        youtubeId: "k_JnCWT-uTY"
-      },
-      {
         title: "Time",
         youtubeId: "F_VjVqe3KJ0"
-      },
-      {
-        title: "Money",
-        youtubeId: "-0kcet4aPpQ"
       }
     ]
   },
@@ -33,16 +25,8 @@ const albums = [
     coverUrl: "https://upload.wikimedia.org/wikipedia/en/f/fb/FMacRumours.PNG",
     tracks: [
       {
-        title: "Go Your Own Way",
-        youtubeId: "6ul-cZyuYq4"
-      },
-      {
         title: "Dreams",
         youtubeId: "mrZRURcb1cM"
-      },
-      {
-        title: "The Chain",
-        youtubeId: "kBYHwH1Vb-c"
       }
     ]
   },
@@ -56,14 +40,6 @@ const albums = [
       {
         title: "Billie Jean",
         youtubeId: "Zi_XLOBDo_Y"
-      },
-      {
-        title: "Beat It",
-        youtubeId: "oRdxUFDoQe0"
-      },
-      {
-        title: "Thriller",
-        youtubeId: "sOnqjkJTMaA"
       }
     ]
   },
@@ -75,16 +51,8 @@ const albums = [
     coverUrl: "https://upload.wikimedia.org/wikipedia/en/9/9c/Princepurplerain.jpg",
     tracks: [
       {
-        title: "Purple Rain",
-        youtubeId: "TvnYmWpD_T8"
-      },
-      {
         title: "When Doves Cry",
         youtubeId: "UG3VcCAlUgE"
-      },
-      {
-        title: "Let's Go Crazy",
-        youtubeId: "aXJhDltzYVQ"
       }
     ]
   },
@@ -95,14 +63,6 @@ const albums = [
     year: 1969,
     coverUrl: "https://upload.wikimedia.org/wikipedia/en/4/42/Beatles_-_Abbey_Road.jpg",
     tracks: [
-      {
-        title: "Come Together",
-        youtubeId: "45cYwDMibGo"
-      },
-      {
-        title: "Something",
-        youtubeId: "UelDrZ1aFeY"
-      },
       {
         title: "Here Comes The Sun",
         youtubeId: "KQetemT1sWc"
@@ -119,14 +79,6 @@ const albums = [
       {
         title: "Smells Like Teen Spirit",
         youtubeId: "hTWKbfoikeg"
-      },
-      {
-        title: "Come As You Are",
-        youtubeId: "vabnZ9-ex7o"
-      },
-      {
-        title: "Lithium",
-        youtubeId: "pkcJEvMcnEg"
       }
     ]
   },
@@ -140,14 +92,6 @@ const albums = [
       {
         title: "Nuthin' but a 'G' Thang",
         youtubeId: "6xjRdBjmePQ"
-      },
-      {
-        title: "Let Me Ride",
-        youtubeId: "S0Sp500ZVI0"
-      },
-      {
-        title: "Dre Day",
-        youtubeId: "h4UqMyldS7Q"
       }
     ]
   },
@@ -161,14 +105,6 @@ const albums = [
       {
         title: "Rehab",
         youtubeId: "KUmZp8pR1uc"
-      },
-      {
-        title: "Back to Black",
-        youtubeId: "TJAfLE39ZZ8"
-      },
-      {
-        title: "You Know I'm No Good",
-        youtubeId: "b-I2s5zRbHg"
       }
     ]
   },
@@ -182,14 +118,6 @@ const albums = [
       {
         title: "Get Lucky",
         youtubeId: "5NV6Rdv1a3I"
-      },
-      {
-        title: "Instant Crush",
-        youtubeId: "a5uQMwRMHcs"
-      },
-      {
-        title: "Lose Yourself to Dance",
-        youtubeId: "NF-kLy44Hls"
       }
     ]
   },
@@ -203,14 +131,6 @@ const albums = [
       {
         title: "So What",
         youtubeId: "ylXk1LBvIqU"
-      },
-      {
-        title: "Blue in Green",
-        youtubeId: "TLDflhhdPCg"
-      },
-      {
-        title: "All Blues",
-        youtubeId: "-488UORrfJ0"
       }
     ]
   },
@@ -222,16 +142,8 @@ const albums = [
     coverUrl: "https://upload.wikimedia.org/wikipedia/en/b/ba/Radioheadokcomputer.png",
     tracks: [
       {
-        title: "Paranoid Android",
-        youtubeId: "fHiGbolFFGw"
-      },
-      {
         title: "Karma Police",
         youtubeId: "1uYWYWPc9HU"
-      },
-      {
-        title: "No Surprises",
-        youtubeId: "u5CVsCnxyXg"
       }
     ]
   },
@@ -245,14 +157,6 @@ const albums = [
       {
         title: "Alright",
         youtubeId: "Z-48u_uWMHY"
-      },
-      {
-        title: "King Kunta",
-        youtubeId: "hRK7PVJFbS8"
-      },
-      {
-        title: "Wesley's Theory",
-        youtubeId: "s0QtSPl8cf0"
       }
     ]
   },
@@ -266,14 +170,6 @@ const albums = [
       {
         title: "Stairway to Heaven",
         youtubeId: "QkF3oxziUI4"
-      },
-      {
-        title: "Black Dog",
-        youtubeId: "yBuub4Xe1mw"
-      },
-      {
-        title: "Rock and Roll",
-        youtubeId: "lncr2g9XJHU"
       }
     ]
   },
@@ -285,16 +181,8 @@ const albums = [
     coverUrl: "https://upload.wikimedia.org/wikipedia/en/e/e1/Bluealbumcover.jpg",
     tracks: [
       {
-        title: "River",
-        youtubeId: "3NH-ctddY9o"
-      },
-      {
         title: "A Case of You",
         youtubeId: "0YuaZcylk_o"
-      },
-      {
-        title: "California",
-        youtubeId: "Lm39YkGrHDg"
       }
     ]
   },
@@ -308,14 +196,6 @@ const albums = [
       {
         title: "What's Going On",
         youtubeId: "o5TmORitlKk"
-      },
-      {
-        title: "Mercy Mercy Me (The Ecology)",
-        youtubeId: "G5xpBCCJ3MM"
-      },
-      {
-        title: "Inner City Blues (Make Me Wanna Holler)",
-        youtubeId: "57Ykv1D0qEE"
       }
     ]
   }
