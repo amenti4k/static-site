@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vinyl Universe</title>
-  <meta name="description" content="An immersive vinyl record listening experience">
+  <title>Tokyo Deep Gem</title>
+  <meta name="description" content="An indie vinyl store hidden in Tokyo's nightlife">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/vinyl-universe-industrial.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokyo-deep-gem.css">
 </head>
 <body>
 
@@ -20,7 +20,7 @@
   <div class="universe-container">
     <!-- Header -->
     <header class="universe-header">
-      <h1 class="universe-logo">VINYL UNIVERSE <span class="header-subtitle">premium collection</span></h1>
+      <h1 class="universe-logo">TOKYO DEEP GEM <span class="header-subtitle">indie vinyl store</span></h1>
       <nav class="universe-nav">
         <a href="#" class="nav-link">Collection</a>
         <a href="#" class="nav-link">About</a>
