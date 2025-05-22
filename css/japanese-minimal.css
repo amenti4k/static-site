@@ -1,0 +1,370 @@
+/* Japanese Minimalist House Design */
+
+:root {
+  --tatami-beige: #e8dcc6;
+  --wood-brown: #8b6b47;
+  --shoji-white: #f5f5f0;
+  --shadow-gray: #2a2a2a;
+  --accent-red: #c73e3a;
+  --text-dark: #1a1a1a;
+  --wood-texture: linear-gradient(90deg, #8b6b47 0%, #9d7d5a 50%, #8b6b47 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: var(--tatami-beige);
+  color: var(--text-dark);
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Tatami floor texture */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(139, 107, 71, 0.1) 2px, rgba(139, 107, 71, 0.1) 4px),
+    repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(139, 107, 71, 0.1) 2px, rgba(139, 107, 71, 0.1) 4px);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Main container */
+.main-container {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  z-index: 2;
+}
+
+/* Left side - Record collection area */
+.record-collection-area {
+  flex: 1;
+  padding: 60px 40px;
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Header */
+.minimal-header {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  z-index: 10;
+}
+
+.minimal-logo {
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 4px;
+  color: var(--text-dark);
+  text-transform: uppercase;
+}
+
+/* Scattered records on floor */
+.floor-records {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 120px);
+  margin-top: 80px;
+}
+
+.floor-record {
+  position: absolute;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));
+}
+
+.floor-record:hover {
+  transform: translateY(-5px) rotate(var(--hover-rotation, 2deg));
+  filter: drop-shadow(0 8px 16px rgba(0,0,0,0.15));
+}
+
+.floor-record.selected {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.record-sleeve {
+  width: 200px;
+  height: 200px;
+  background: var(--shoji-white);
+  border: 1px solid rgba(0,0,0,0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.record-sleeve img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.record-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  color: white;
+  padding: 15px;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.floor-record:hover .record-info {
+  transform: translateY(0);
+}
+
+.record-title {
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.record-artist {
+  font-size: 11px;
+  font-weight: 300;
+  opacity: 0.9;
+}
+
+/* Right side - Record player area */
+.player-area {
+  width: 500px;
+  background: var(--shoji-white);
+  box-shadow: -4px 0 20px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 40px;
+}
+
+/* Shoji screen lines */
+.player-area::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    repeating-linear-gradient(0deg, transparent, transparent 80px, rgba(0,0,0,0.05) 80px, rgba(0,0,0,0.05) 81px),
+    repeating-linear-gradient(90deg, transparent, transparent 80px, rgba(0,0,0,0.05) 80px, rgba(0,0,0,0.05) 81px);
+  pointer-events: none;
+}
+
+/* Minimalist turntable */
+.turntable {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  z-index: 3;
+}
+
+.turntable-base {
+  width: 100%;
+  height: 100%;
+  background: var(--wood-texture);
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  position: relative;
+  padding: 40px;
+}
+
+.platter {
+  width: 280px;
+  height: 280px;
+  background: #1a1a1a;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 0 20px rgba(0,0,0,0.5);
+}
+
+.platter.spinning {
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: translate(-50%, -50%) rotate(0deg); }
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+.spindle {
+  width: 10px;
+  height: 10px;
+  background: #666;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 10;
+}
+
+.playing-record {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  position: absolute;
+  background: #111;
+  display: none;
+  overflow: hidden;
+}
+
+.playing-record.active {
+  display: block;
+}
+
+.playing-record img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Tonearm */
+.tonearm-base {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  width: 80px;
+  height: 80px;
+}
+
+.tonearm {
+  width: 120px;
+  height: 4px;
+  background: #333;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  transform-origin: right center;
+  transform: rotate(-20deg);
+  transition: transform 0.5s ease;
+  border-radius: 2px;
+}
+
+.tonearm.playing {
+  transform: rotate(0deg);
+}
+
+.tonearm-head {
+  width: 20px;
+  height: 8px;
+  background: #555;
+  position: absolute;
+  left: -20px;
+  top: -2px;
+  border-radius: 2px;
+}
+
+/* Controls */
+.player-controls {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.control-btn {
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--text-dark);
+  background: transparent;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 14px;
+}
+
+.control-btn:hover {
+  background: var(--text-dark);
+  color: var(--shoji-white);
+}
+
+.control-btn.main {
+  width: 50px;
+  height: 50px;
+  font-size: 16px;
+}
+
+/* Now playing info */
+.now-playing {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  right: 40px;
+  text-align: center;
+}
+
+.now-playing-title {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.now-playing-artist {
+  font-size: 14px;
+  font-weight: 300;
+  color: #666;
+}
+
+/* Flying record animation */
+.flying-record {
+  position: fixed;
+  width: 200px;
+  height: 200px;
+  pointer-events: none;
+  z-index: 100;
+  transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.flying-record img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+  }
+  
+  .player-area {
+    width: 100%;
+    height: 50vh;
+    position: fixed;
+    bottom: 0;
+  }
+  
+  .record-collection-area {
+    padding-bottom: 50vh;
+  }
+}

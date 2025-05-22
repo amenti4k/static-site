@@ -318,5 +318,68 @@ const albums = [
         youtubeId: "57Ykv1D0qEE"
       }
     ]
+  },
+  {
+    id: 16,
+    title: "Discovery",
+    artist: "Daft Punk",
+    year: 2001,
+    coverUrl: "https://upload.wikimedia.org/wikipedia/en/2/27/Daft_Punk_-_Discovery.png",
+    tracks: [
+      {
+        title: "One More Time",
+        youtubeId: "FGBhQbmPwH8"
+      },
+      {
+        title: "Harder Better Faster Stronger",
+        youtubeId: "gAjR4_CbPpQ"
+      },
+      {
+        title: "Digital Love",
+        youtubeId: "4whD6uAryMs"
+      }
+    ]
+  },
+  {
+    id: 17,
+    title: "In Rainbows",
+    artist: "Radiohead",
+    year: 2007,
+    coverUrl: "https://upload.wikimedia.org/wikipedia/en/1/14/Inrainbowscover.png",
+    tracks: [
+      {
+        title: "15 Step",
+        youtubeId: "WedRDYmtvX4"
+      },
+      {
+        title: "Nude",
+        youtubeId: "BbWBRnDK_AE"
+      },
+      {
+        title: "Weird Fishes/Arpeggi",
+        youtubeId: "V_Ydoe4Q-Gg"
+      }
+    ]
+  },
+  {
+    id: 18,
+    title: "Blonde",
+    artist: "Frank Ocean",
+    year: 2016,
+    coverUrl: "https://upload.wikimedia.org/wikipedia/en/a/a0/Blonde_-_Frank_Ocean.jpeg",
+    tracks: [
+      {
+        title: "Nikes",
+        youtubeId: "diIFhc_Kzng"
+      },
+      {
+        title: "Pink + White",
+        youtubeId: "uzS3WG6__G4"
+      },
+      {
+        title: "Self Control",
+        youtubeId: "BME88lS6aVQ"
+      }
+    ]
   }
 ];
