@@ -1,6 +1,6 @@
-# My Website
+# Tokyo Deep Gem
 
-A modern, responsive website built with HTML, CSS, and JavaScript.
+An indie vinyl store website inspired by Tokyo's underground scene.
 
 ## Features
 
@@ -58,7 +58,8 @@ npx serve
 ```
 static-site/
 ├── css/
-│   └── styles.css
+│   ├── styles.css
+│   └── tokyo-deep-gem.css
 ├── js/
 │   └── main.js
 ├── images/
